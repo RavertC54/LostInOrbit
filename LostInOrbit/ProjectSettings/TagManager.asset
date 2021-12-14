@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - floater
+  - falling_block
+  - floor
   layers:
   - Default
   - TransparentFX

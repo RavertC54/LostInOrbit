@@ -18,16 +18,8 @@ public class block : MonoBehaviour
 
     }
 
-    public void Lateral_Movement(bool lateral)
+    public void Lateral_Movement(bool left_mov, bool right_mov)
     {
-
-        //Left movement +z
-        if (lateral)
-        {
-
-            this.gameObject.Transform.position(0, 0, 1);
-        }
-        //Right movement -z
 
 
 
