@@ -9,6 +9,7 @@ public class main : MonoBehaviour
 
     public bool left_mov;
     public bool right_mov;
+    public bool down_mov;
     public GameObject falling_block;
 
 
@@ -26,33 +27,38 @@ public class main : MonoBehaviour
     {
         falling_block = GameObject.FindGameObjectWithTag("falling_block");
 
-        left_mov = false;
-        right_mov = false;
+        float speedScale = 1f;
+
+        Vector3 pos = falling_block.transform.position;
+
+
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            left_mov = true;
+            if (pos.z < 3)
+            {
+                pos.z += 1;
+                falling_block.transform.position = pos;
+            }
+            
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            right_mov = true;
+            if (pos.z > -3)
+            {
+                pos.z -= 1;
+                falling_block.transform.position = pos;
+            }
         }
-        //Left movement +z
-        if (left_mov)
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            Vector3 pos = falling_block.transform.position;
-            pos.z += 1;
-            falling_block.transform.position = pos;
+            if (pos.y >= -1)
+            {
+                pos.y += -1;
+                falling_block.transform.position = pos;
+            }
+            
         }
-
-        //Right movement -z
-        if (right_mov)
-        {
-            Vector3 pos = falling_block.transform.position;
-            pos.z -= 1;
-            falling_block.transform.position = pos;
-        }
-
 
     }
 
