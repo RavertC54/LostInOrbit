@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9044558685378907818}
-  - component: {fileID: -345646561405016734}
-  - component: {fileID: -2195171436486202990}
+  - component: {fileID: 7757307061397927585}
+  - component: {fileID: 3600298364308408253}
   m_Layer: 0
-  m_Name: Polycube1
+  m_Name: Polycube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-345646561405016734
+--- !u!114 &7757307061397927585
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 2
---- !u!65 &-2195171436486202990
+--- !u!65 &3600298364308408253
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438777814566079010, guid: 44e019f5cddfc2548a7af98ddcd3e51d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 438777814566079010, guid: 44e019f5cddfc2548a7af98ddcd3e51d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -203,11 +203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438777814566079010, guid: 44e019f5cddfc2548a7af98ddcd3e51d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 438777814566079010, guid: 44e019f5cddfc2548a7af98ddcd3e51d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 438777814566079010, guid: 44e019f5cddfc2548a7af98ddcd3e51d, type: 3}
       propertyPath: m_LocalRotation.w
